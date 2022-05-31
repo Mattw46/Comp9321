@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE Cast [
+   <!ELEMENT Cast (Character+) >
+   <!ELEMENT Character (Name, Diet?, Sound+)>
+   <!ELEMENT Name (#PCDATA)>
+   <!ELEMENT Diet (#PCDATA)>
+   <!ELEMENT Sound (#PCDATA)>
+   <!ATTLIST Character alive (true | false) "true">
+]>
+<Cast>
+<Character alive="false">
+	<Name>Zombies</Name>
+	<Diet>brains</Diet>
+	<Sound>Graagh!</Sound>
+</Character>
+<Character alive="true">
+    <Name>Pirates</Name>
+    <Diet>Rum</Diet>
+    <Sound>Arrr!</Sound>
+    <Sound>Aye aye!</Sound>
+</Character>
+<Character alive="true">
+	<Name>Ninjas</Name>
+	<Sound /> <!-- Ninjas make no sound -->
+</Character>
+<Character alive="false">
+	<Name>Vampires</Name>
+	<Diet>Blood</Diet>
+	<Sound>Scream!</Sound>
+</Character>
+</Cast>
